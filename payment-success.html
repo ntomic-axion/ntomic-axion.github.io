@@ -1,16 +1,6 @@
 <script>
 	(function() {
-		// Check if the page was reached via the app and not from an internal redirection
-		const isFromRedirect = window.location.hash === '#app-redirect';
-
-		if (!isFromRedirect) {
-			// Redirect to Universal Link to open the app
-			window.location.href = 'https://ntomic-axion.github.io/payment-success#app-redirect';
-
-			// Fallback: After a short delay, try custom scheme if Universal Link fails
-			setTimeout(() => {
-				window.location.href = 'paymentdemo://payment-success';
-			}, 1000);
+			window.location.href = 'paymentdemo://payment-success';
 		}
 	})();
 </script>
