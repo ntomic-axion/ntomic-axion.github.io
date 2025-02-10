@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Payment Success</title>
-	<script>
-		window.location.href = 'https://ntomic-axion.github.io/payment-success';
-	</script>
-</head>
-<body>
-<h1>Payment Success</h1>
-<p>Your payment was successful!</p>
-</body>
-</html>
+<script>
+	(function() {
+		// Check if the page was reached via the app and not from an internal redirection
+		const isFromRedirect = window.location.hash === '#app-redirect';
+
+		if (!isFromRedirect) {
+			// Redirect to Universal Link to open the app
+			window.location.href = 'https://ntomic-axion.github.io/payment-success#app-redirect';
+
+			// Fallback: After a short delay, try custom scheme if Universal Link fails
+			setTimeout(() => {
+				window.location.href = 'paymentdemo://payment-success';
+			}, 1000);
+		}
+	})();
+</script>
