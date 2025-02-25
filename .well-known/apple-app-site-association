@@ -5,7 +5,7 @@
       {
         "appID": "9JAFUY7AJ5.de.logpay.paymentdemo",
         "paths": [
-          "/deeplink
+          "/universal-link
         ]
       }
     ]
