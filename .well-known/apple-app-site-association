@@ -4,9 +4,7 @@
     "details": [
       {
         "appID": "9JAFUY7AJ5.de.logpay.paymentdemo",
-        "paths": [
-          "/universal-link"
-        ]
+        "paths": [ "/universal-link*", "/payment-success", "/payment-error", "/payment-cancel" ]
       }
     ]
   }
