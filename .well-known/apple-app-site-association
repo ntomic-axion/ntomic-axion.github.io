@@ -4,23 +4,15 @@
       {
         "appIDs": ["9JAFUY7AJ5.de.logpay.paymentdemo"],
         "components": [
-           {
-            "/": "/universal-link/*",
-           },
-           {
-            "/": "/payment-success/*",
-            },
-           {
-            "/": "/payment-error/*",
-           },
-           {
-           "/": "/payment-cancel/*",
-           }
+          { "/": "/universal-link/*" },
+          { "/": "/payment-success/*" },
+          { "/": "/payment-error/*" },
+          { "/": "/payment-cancel/*" }
         ]
       }
     ]
   },
   "webcredentials": {
-    "apps": [ "9JAFUY7AJ5.de.logpay.paymentdemo" ]
+    "apps": ["9JAFUY7AJ5.de.logpay.paymentdemo"]
   }
 }
