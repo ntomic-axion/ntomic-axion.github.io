@@ -7,13 +7,13 @@
 </head>
 <body>
 <h1>Open in App</h1>
-<p>Click the button below to continue.</p>
-<button onclick="openApp()">Open in App</button>
+<p>Click the button below to open the app.</p>
+<button id="openAppButton">Open in App</button>
 
 <script>
-	function openApp() {
+	document.getElementById("openAppButton").addEventListener("click", function () {
 		window.location.assign("https://ntomic-axion.github.io/universal-link");
-	}
+	});
 </script>
 </body>
 </html>
